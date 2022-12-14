@@ -1,0 +1,84 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  padding: 53px;
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 786px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  height: 100%;
+
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.c1,
+.c2,
+.c3 {
+  height: calc(calc(calc(100vw - 150px) / 3) - 40px);
+  width: calc(calc(100vw - 150px) / 3);
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 786px) {
+  .c1,
+  .c2,
+  .c3 {
+    width: 50%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .c1,
+  .c2,
+  .c3 {
+    width: 80%;
+    height: auto;
+  }
+}
+.ch1 {
+  font-size: 2.5rem;
+  color: #252f65;
+
+  margin-top: 30px;
+}
+@media screen and (max-width: 786px) {
+  .ch1 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ch1 {
+    font-size: 2rem;
+  }
+}

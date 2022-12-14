@@ -1,0 +1,46 @@
+.container {
+  width: 100%auto;
+  height: 100px;
+  background-color: #06114f;
+}
+.wrapper {
+  display: grid;
+  z-index: 1;
+
+  width: 100%auto;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+  transform: translate(0, 50%);
+}
+@media screen and (max-width: 495px) {
+  .wrapper {
+    transform: translate(0, 25%);
+    padding: 0 10px;
+  }
+}
+.row {
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: "col1 col1" "col2 col2";
+}
+.p1 {
+  margin-bottom: 2px;
+  padding: 0 15px;
+  grid-area: col1;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.p2 {
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
+  color: white;
+}
+.icons {
+  padding: 7px;
+}
