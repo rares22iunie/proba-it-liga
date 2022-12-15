@@ -37,6 +37,10 @@ Made by Rares Doroftei
         - Ruta de responsuri cu statusuri de eroare
 ## Running
 - To start Frontend simply type npm i and after npm start
+- Pentru logare in Frontend exista un user creat,
+    - Username: rares@rares.com
+    - Parola: abc123
+    - Se pot crea conturi si functioneaza
 - To start Backend
     - Backend might also need nodemon to start, run command npm i -g nodemon from backend folder to install nodemon
     - Simply type npm i and after npm start
